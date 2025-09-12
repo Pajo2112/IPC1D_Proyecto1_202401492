@@ -1,7 +1,5 @@
-package proyecto1;
+package org.pavelcabrera.model;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.time.LocalDateTime;
 
 public class Venta {
@@ -17,11 +15,13 @@ public class Venta {
         this.fechaHora = LocalDateTime.now().toString();
     }
 
-    public void guardarVentaEnArchivo() {
-        try (FileWriter fw = new FileWriter("ventas.txt", true)) {
-            fw.write(codigoProducto + "," + cantidad + "," + total + "," + fechaHora + "\n");
-        } catch (IOException e) {
-            System.out.println("Error guardando la venta.");
-        }
+    public String getCodigoProducto() { return codigoProducto; }
+    public int getCantidad() { return cantidad; }
+    public double getTotal() { return total; }
+    public String getFechaHora() { return fechaHora; }
+
+    @Override
+    public String toString() {
+        return fechaHora + " | " + codigoProducto + " | Cantidad: " + cantidad + " | Total: Q" + total;
     }
 }

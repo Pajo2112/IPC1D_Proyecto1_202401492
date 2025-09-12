@@ -1,4 +1,4 @@
-package proyecto1;
+package org.pavelcabrera.model;
 
 public class Estudiante {
     private String nombre;
