@@ -17,9 +17,9 @@ public class MenuPrincipalView implements Ventana {
         Bitacora bitacora = new Bitacora();
         inventarioController = new InventarioController(bitacora);
         ventaController = new VentaController(bitacora);
-        reporteController = new ReporteController();
+        reporteController = new ReporteController(bitacora);
         bitacoraController = new BitacoraController(bitacora);
-        estudiante = new Estudiante("Juan Pérez", "202500123", "A");
+        estudiante = new Estudiante("Pavel Cabrera", "202401492", "D");
         sc = new Scanner(System.in);
     }
 
@@ -94,6 +94,9 @@ public class MenuPrincipalView implements Ventana {
         } while (opcion != 8);
     }
 
+    /**
+     *
+     */
     @Override
     public void ocultar() {
         System.out.println("Cerrando menú...");
