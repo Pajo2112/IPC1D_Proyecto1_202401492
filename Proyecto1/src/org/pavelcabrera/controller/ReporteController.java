@@ -4,14 +4,17 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import java.io.File;
 
 import org.pavelcabrera.model.Producto;
 import org.pavelcabrera.model.Venta;
 import org.pavelcabrera.model.Bitacora;
 
 import java.io.FileOutputStream;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class ReporteController {
 
@@ -20,13 +23,21 @@ public class ReporteController {
     public ReporteController(Bitacora bitacora) {
         this.bitacora = bitacora;
     }
-
-
+    
+    // Método auxiliar para crear carpeta y devolver ruta completa
+    private String generarRutaArchivo(String nombre) {
+        String folderPath = "reportesPDF";
+        File folder = new File(folderPath);
+        if (!folder.exists()) {
+            folder.mkdir();
+        }
+        return folderPath + File.separator + nombre;
+    }
 
     // PDF Stock
     public void generarReporteStockPDF(Producto[] productos, int contador) {
         String fecha = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd_MM_yyyy_HH_mm_ss"));
-        String archivo = fecha + "_Stock.pdf";
+        String archivo = generarRutaArchivo (fecha + "_Stock.pdf");
 
         try {
             Document doc = new Document();
@@ -40,7 +51,7 @@ public class ReporteController {
             PdfPTable tabla = new PdfPTable(5);
             tabla.setWidthPercentage(100);
             tabla.addCell("Código");
-            tabla.addCell("Nombre");
+            tabla.addCell("Marca");
             tabla.addCell("Categoría");
             tabla.addCell("Precio");
             tabla.addCell("Cantidad");
@@ -69,8 +80,7 @@ public class ReporteController {
     // PDF Ventas
     public void generarReporteVentasPDF(Venta[] ventas, int contador) {
         String fecha = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd_MM_yyyy_HH_mm_ss"));
-        String archivo = fecha + "_Ventas.pdf";
-
+        String archivo = generarRutaArchivo(fecha + "_Ventas.pdf");
         try {
             Document doc = new Document();
             PdfWriter.getInstance(doc, new FileOutputStream(archivo));
@@ -110,7 +120,7 @@ public class ReporteController {
     // PDF Bitácora
     public void generarBitacoraPDF() {
         String fecha = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd_MM_yyyy_HH_mm_ss"));
-        String archivo = fecha + "_Bitacora.pdf";
+        String archivo = generarRutaArchivo(fecha + "_Bitacora.pdf");
 
         try {
             Document doc = new Document();

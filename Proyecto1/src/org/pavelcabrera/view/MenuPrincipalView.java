@@ -21,7 +21,7 @@ public class MenuPrincipalView implements Ventana {
         bitacoraController = new BitacoraController(bitacora);
         estudiante = new Estudiante("Pavel Cabrera", "202401492", "D");
         sc = new Scanner(System.in);
-    }
+    }   
 
     @Override
     public void mostrar() {
@@ -44,7 +44,7 @@ public class MenuPrincipalView implements Ventana {
                 case 1 -> {
                     System.out.print("Código: ");
                     String codigo = sc.nextLine();
-                    System.out.print("Nombre: ");
+                    System.out.print("Marca: ");
                     String nombre = sc.nextLine();
                     System.out.print("Categoría: ");
                     String categoria = sc.nextLine();
