@@ -3,13 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Pavel/OneDrive/Documentos/NetBeansProjects/Proyecto1/src/proyecto1/Estudiante.java</file>
-            <file>file:/C:/Users/Pavel/OneDrive/Documentos/NetBeansProjects/Proyecto1/src/proyecto1/Main.java</file>
-            <file>file:/C:/Users/Pavel/OneDrive/Documentos/NetBeansProjects/Proyecto1/src/proyecto1/Inventario.java</file>
-            <file>file:/C:/Users/Pavel/OneDrive/Documentos/NetBeansProjects/Proyecto1/src/proyecto1/Bitacora.java</file>
-            <file>file:/C:/Users/Pavel/OneDrive/Documentos/NetBeansProjects/Proyecto1/src/proyecto1/Producto.java</file>
-            <file>file:/C:/Users/Pavel/OneDrive/Documentos/NetBeansProjects/Proyecto1/src/proyecto1/Reportes.java</file>
-            <file>file:/C:/Users/Pavel/OneDrive/Documentos/NetBeansProjects/Proyecto1/src/proyecto1/Venta.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/system/Ventana.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/model/Estudiante.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/model/Bitacora.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/view/MenuPrincipalView.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/model/Producto.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/controller/VentaController.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/controller/BitacoraController.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/model/Venta.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/controller/InventarioController.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/controller/ReporteController.java</file>
+            <file>file:/C:/Users/Pavel/OneDrive/Escritorio/IPC1D_Proyecto1/Proyecto1/src/org/pavelcabrera/system/Principal.java</file>
         </group>
     </open-files>
 </project-private>

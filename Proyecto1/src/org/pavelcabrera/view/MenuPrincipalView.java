@@ -81,9 +81,10 @@ public class MenuPrincipalView implements Ventana {
                         System.out.println(ventas[i]);
                     }
                 }
-                case 5 -> {
-                    reporteController.generarReporteStock();
-                    reporteController.generarReporteVentas();
+             case 5 -> {
+    reporteController.generarReporteStockPDF(inventarioController.getProductos(), inventarioController.getContador());
+    reporteController.generarReporteVentasPDF(ventaController.getVentas(), ventaController.getContador());
+    reporteController.generarBitacoraPDF();
                 }
                 case 6 -> bitacoraController.mostrarBitacora();
                 case 7 -> estudiante.mostrarDatos();
